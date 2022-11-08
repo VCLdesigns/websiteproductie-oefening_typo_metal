@@ -1,0 +1,172 @@
+/* © Victor Loots, 2022
+/*
+/* Fonts */
+@font-face {
+  font-family: 'evilzregular';
+  src: url('../fonts/evilz-webfont.eot');
+  src: url('../fonts/evilz-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/evilz-webfont.woff2') format('woff2'),
+    url('../fonts/evilz-webfont.woff') format('woff'),
+    url('../fonts/evilz-webfont.ttf') format('truetype'),
+    url('../fonts/evilz-webfont.svg#evilzregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'wc_rhesus_a_btaregular';
+  src: url('../fonts/wc_rhesus_a_bta-webfont.eot');
+  src: url('../fonts/wc_rhesus_a_bta-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/wc_rhesus_a_bta-webfont.woff2') format('woff2'),
+    url('../fonts/wc_rhesus_a_bta-webfont.woff') format('woff'),
+    url('../fonts/wc_rhesus_a_bta-webfont.ttf') format('truetype'),
+    url('../fonts/wc_rhesus_a_bta-webfont.svg#wc_rhesus_a_btaregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* 
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+/* Standards */
+body {
+  min-height: 100%;
+}
+
+#container {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+
+}
+
+#metal {
+  position: relative;
+  margin: 100px auto;
+  width: 750px;
+  height: 600px;
+  background-image: url(../img/bo_play_pattern.png);
+}
+
+#metal .metal_buitenkant {
+  width: 650px;
+  height: 500px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background-image: url(../img/metal.jpeg);
+  border: #e79700 2px solid;
+  box-shadow:
+    inset 2px 2px 5px 1px rgba(230, 149, 0, 1),
+    2px 2px 3px 5px rgba(185, 45, 0, 1),
+    inset -2px -2px 5px 1px rgba(230, 149, 0, 1),
+    -2px -2px 5px 4px rgba(185, 45, 0, 1);
+
+}
+
+h1,
+h2 {
+  font-family: 'New Rocker', cursive;
+  position: absolute;
+
+}
+
+h1 {
+
+  top: 105px;
+  left: 45px;
+  color: #ffffff;
+  font-size: 5em;
+  text-shadow: -1px -1px black;
+}
+
+h2 {
+  top: 188px;
+  left: 62px;
+  color: #151515;
+  text-shadow: 1px 1px #ffffff;
+  background-color: rgba(173, 30, 14, 0.7);
+  width: auto;
+  display: inline;
+  padding: 10px;
+}
+
+#metal .metal_binnenkant {
+  width: 450px;
+  height: 150px;
+  position: absolute;
+  top: 300px;
+  left: 100px;
+  background-image: url(../img/lined_paper.png);
+
+}
+
+p {
+  font-family: 'Special Elite', cursive;
+  font-size: 0.9em;
+  line-height: 150%;
+  padding: 20px;
+}
+
+.icoon {
+  font-family: 'evilzregular';
+  color: #ffffff;
+  font-size: 2em;
+  position: absolute;
+}
+
+.icoon_links {
+  top: -33px;
+  left: -17px;
+}
+
+.icoon_rechts {
+  top: -33px;
+  right: -17px;
+}
+
+.icoon_onder {
+  bottom: -20px;
+  left: 50%;
+}
+
+.icoon_midden {
+  top: 26px;
+  left: 378px;
+  font-size: 13em;
+  text-shadow: -1px -1px black;
+}
+
+.bloed {
+  font-family: 'wc_rhesus_a_btaregular';
+  color: rgba(173, 30, 14, 0.8);
+  position: absolute;
+  font-size: 4em;
+}
+
+.bloed_schedel {
+  top: -57px;
+  right: 89px;
+  font-size: 5em;
+}
+
+.bloed_rechts {
+  bottom: -7px;
+  right: 50px;
+}
+
+.bloed_links {
+  bottom: 79px;
+  left: -23px;
+}
