@@ -2,6 +2,31 @@
 /*
 /* Fonts */
 @font-face {
+  font-family: "domineregular";
+  src: url("../fonts/domine-regular-webfont.eot");
+  src: url("../fonts/domine-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/domine-regular-webfont.woff2") format("woff2"),
+    url("../fonts/domine-regular-webfont.woff") format("woff"),
+    url("../fonts/domine-regular-webfont.ttf") format("truetype"),
+    url("../fonts/domine-regular-webfont.svg#domineregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "montserratregular";
+  src: url("../fonts/montserrat-regular-webfont.eot");
+  src: url("../fonts/montserrat-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/montserrat-regular-webfont.woff2") format("woff2"),
+    url("../fonts/montserrat-regular-webfont.woff") format("woff"),
+    url("../fonts/montserrat-regular-webfont.ttf") format("truetype"),
+    url("../fonts/montserrat-regular-webfont.svg#montserratregular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'evilzregular';
   src: url('../fonts/evilz-webfont.eot');
   src: url('../fonts/evilz-webfont.eot?#iefix') format('embedded-opentype'),
@@ -29,7 +54,14 @@
   font-style: normal;
 
 }
-
+*
+/* Variabelen */
+:root {
+  --font_titel: "domineregular", Georgia, serif;
+  --font_subtitel: "montserratregular", Verdana, sans-serif;
+  --kleur_wit: #f8f7f3;
+  --kleur_zwart: #303030;
+}
 /* 
 /* Reset */
 * {
@@ -42,18 +74,31 @@
 /* Standards */
 body {
   min-height: 100%;
+  color: var(--kleur_zwart);
+  background-color: var(--kleur_wit);
 }
+
 
 #container {
   max-width: 1200px;
   width: 80%;
   margin: 0 auto;
-
+}
+h1 {
+  text-align: center;
+  font-family: var(--font_titel);
+  padding: 50px 0 25px 0;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  font-family: var(--font_subtitel);
+  padding: 25px 0 10px 0;
 }
 
 #metal {
   position: relative;
-  margin: 100px auto;
+  margin: 0 auto;
   width: 750px;
   height: 600px;
   background-image: url(../img/bo_play_pattern.png);
@@ -75,14 +120,14 @@ body {
 
 }
 
-h1,
-h2 {
+h2,
+h3 {
   font-family: 'New Rocker', cursive;
   position: absolute;
 
 }
 
-h1 {
+h2 {
 
   top: 105px;
   left: 45px;
@@ -91,7 +136,7 @@ h1 {
   text-shadow: -1px -1px black;
 }
 
-h2 {
+h3 {
   top: 188px;
   left: 62px;
   color: #151515;
